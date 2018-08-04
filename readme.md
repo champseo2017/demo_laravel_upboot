@@ -1,3 +1,3 @@
 # Multi-User Authentication Tutorail
 
-_Produced by DevMarketer_
+_Produced by Champ
