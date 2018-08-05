@@ -32,6 +32,13 @@
                                     </a>
                                 </span>
                             </p>
+
+                            <h3>ssl</h3>
+                            <div>
+                            <b>brand</b>| <?= $website_brand; ?><br/>
+                            <b>product</b>| <?= $website_product; ?><br/>
+                            <b>expires</b>|  <?= $website_expires; ?>
+                            </div>
                         </div>
                     </ul>
                 </div>

@@ -65,6 +65,14 @@ $response = $response->monitors[0];
 $website_name = $response->friendly_name;
 $website_url = $response->url;
 
+// Website ssl:
+$website_brand = $response->ssl->brand;
+$website_product = $response->ssl->product;
+$website_expires = $response->ssl->expires;
+
+$website_ssl = $response->ssl;
+
+
 // Date monitor was created:
 $monitor_started = $response->create_datetime;
 $monitor_started = date('jS F Y', $monitor_started);
@@ -137,7 +145,7 @@ if ($monitor_status == 0) { // Monitor is paused:
 
 
 
-return view('home',compact('website_url','website_name','monitor_started','monitor_status','monitor_info','monitor_uptime','data','background_colour','labels','border_colour'));
+return view('home',compact('website_url','website_name','monitor_started','monitor_status','monitor_info','monitor_uptime','data','background_colour','labels','border_colour','website_brand','website_product','website_expires'));
       
     }
 }
