@@ -39,7 +39,7 @@ class DomainController extends Controller
     {
         $domain = new domain;
         $domain->name = $request->name;
-        $domain->number = $request->number;
+        $domain->key_id = $request->key_id;
         $domain->save();
         return redirect(route('domain.index'))->with('success','You have Add successfully.');
     }

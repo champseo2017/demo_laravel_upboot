@@ -65,7 +65,7 @@
                 <select class="form-control select2" multiple="multiple" data-placeholder="Select a State"
                         style="width: 100%;" name="domains[]">
                   @foreach ($domain as $domains)
-                  <option value="{{ $domains->id }}">{{ $domains->name }} | {{ $domains->number }}</option>
+                  <option value="{{ $domains->id }}">{{ $domains->name }} | {{ $domains->key_id }}</option>
                   @endforeach
                 </select>
               </div>

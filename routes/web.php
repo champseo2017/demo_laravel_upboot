@@ -11,9 +11,21 @@
 |
 */
 
+Route::get('test', 'HomeController@test');
+Route::get('/home/gramp/{key_id}', 'HomeController@grap')->name('gramp');
+Route::get('/home/monitor/{key_id}', 'HomeController@index');
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home/statuspage/Ajax.php', function () {
+
+});
+
+
+Route::get('/home/statuspage/Logs','LogviewController@ajax');
+
 
 Auth::routes();
 
@@ -35,5 +47,17 @@ Route::group(['namespace'=>'Admin'],function(){
 
      // Adduser domain
      Route::resource('admin/domain','DomainController');
+     Route::get('/home/statuspage','LogsController@index')->name('statuspage');
+
  
 });
+
+Route::get('/home/modul/Logs','ModulController@index')->name('modul');
+
+
+//   //route data 
+//   Route::group(['namespace'=>'Admin','as'=>'processingchart'],function(){
+   
+//      Route::get('data/chart','DatachartController@index')->name('datafeed');
+
+// });

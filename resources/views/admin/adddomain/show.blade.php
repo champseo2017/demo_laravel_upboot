@@ -14,7 +14,7 @@
     <tr>
       <th scope="col">#</th>
       <th scope="col">Name</th>
-      <th scope="col">Number</th>
+      <th scope="col">Key id</th>
     </tr>
   </thead>
   <tbody>
@@ -22,7 +22,7 @@
                  <tr>
                   <td>{{ $key + 1 }}</td>
                   <td>{{ $domains->name }}</td>
-                  <td>{{ $domains->number  }}</td>
+                  <td>{{ $domains->key_id  }}</td>
                 </tr>
                 @endforeach
   </tbody>

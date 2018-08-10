@@ -9,8 +9,8 @@
     <input type="text" class="form-control" id="name" name="name" placeholder="name">
   </div>
   <div class="form-group">
-    <label for="number">Number</label>
-    <input type="text" class="form-control" id="number" name="number" placeholder="number">
+    <label for="key_id">Key id</label>
+    <input type="text" class="form-control" id="key_id" name="key_id" placeholder="key_id">
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
